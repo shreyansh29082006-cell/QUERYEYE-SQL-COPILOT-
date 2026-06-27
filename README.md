@@ -4,13 +4,6 @@
 
 QueryEye is an agentic NL-to-SQL system built on LangGraph. Upload any SQLite database, ask natural language questions, and get accurate SQL queries with a self-correction loop, human-in-the-loop approval, and LangSmith observability — all through a Streamlit interface backed by a FastAPI async backend.
 
----
-
-## Demo
-
-<!-- Add a GIF or screenshot here after deployment -->
-
----
 
 ## Features
 
@@ -20,8 +13,6 @@ QueryEye is an agentic NL-to-SQL system built on LangGraph. Upload any SQLite da
 - **Human-in-the-Loop** — Generated SQL is surfaced for user approval via LangGraph's `interrupt` mechanism before execution
 - **SQL Injection Protection** — Blocks dangerous keywords (`DROP`, `DELETE`, `UPDATE`, `INSERT`, etc.) at the agent level
 - **LangSmith Tracing** — Full agent observability: every node, every retry, every tool call
-
----
 
 ## Architecture
 
@@ -150,6 +141,4 @@ All agent traces are visible in [LangSmith](https://smith.langchain.com). Each r
 ---
 
 
-## License
 
-MIT
